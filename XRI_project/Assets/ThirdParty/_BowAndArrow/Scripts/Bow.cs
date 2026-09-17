@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Bow : MonoBehaviour
 {
@@ -19,6 +21,10 @@ public class Bow : MonoBehaviour
     private float m_PullValue = 0.0f;
 
     public float pullMultiplier = 1;
+
+    private Vector3 handVelocity;
+    private Transform climbingHand;
+    private CharacterController player;
 
     private void Awake()
     {
@@ -58,6 +64,7 @@ public class Bow : MonoBehaviour
 
         // Apply to animator
         m_Animator.SetFloat("Blend", m_PullValue);
+        Climb();
     }
 
     private float CalculatePull(Transform pullHand)
@@ -108,5 +115,16 @@ public class Bow : MonoBehaviour
     {
         m_CurrentArrow.Fire(m_PullValue * pullMultiplier);
         m_CurrentArrow = null;
+    }
+
+    void Climb()
+    {
+        handVelocity = CalculateHandVelocity(climbingHand);
+        player.Move(-handVelocity);
+    }
+
+    Vector3 CalculateHandVelocity(Transform hand)
+    {
+        return Vector3.zero;
     }
 }
