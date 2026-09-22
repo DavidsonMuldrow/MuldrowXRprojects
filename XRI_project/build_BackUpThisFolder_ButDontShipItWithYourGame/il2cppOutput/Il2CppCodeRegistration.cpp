@@ -27,7 +27,6 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_WitAi_Lib_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_WitAi_TTS_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_Wit_Dictation_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_XR_Audio_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_XR_BuildingBlocks_AIBlocks_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_XR_BuildingBlocks_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_XR_EnvironmentDepth_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_XR_ImmersiveDebugger_CodeGenModule;
@@ -128,7 +127,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_meta_xr_json_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_meta_xr_mrutilitykit_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[112] = 
+const Il2CppCodeGenModule* g_CodeGenModules[111] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_AssistantCoreSDKRuntime_CodeGenModule),
@@ -142,7 +141,6 @@ const Il2CppCodeGenModule* g_CodeGenModules[112] =
 	(&g_Meta_WitAi_TTS_CodeGenModule),
 	(&g_Meta_Wit_Dictation_CodeGenModule),
 	(&g_Meta_XR_Audio_CodeGenModule),
-	(&g_Meta_XR_BuildingBlocks_AIBlocks_CodeGenModule),
 	(&g_Meta_XR_BuildingBlocks_CodeGenModule),
 	(&g_Meta_XR_EnvironmentDepth_CodeGenModule),
 	(&g_Meta_XR_ImmersiveDebugger_CodeGenModule),
@@ -248,20 +246,20 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	144,
 	g_ReversePInvokeWrapperPointers,
-	179630,
+	178144,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	35965,
+	35813,
 	g_Il2CppInvokerPointers,
-	5819,
+	5783,
 	g_UnresolvedVirtualMethodPointers,
 	g_UnresolvedInstanceMethodPointers,
 	g_UnresolvedStaticMethodPointers,
-	1793,
+	1787,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	112,
+	111,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
